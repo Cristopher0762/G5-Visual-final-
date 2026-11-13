@@ -1,0 +1,20 @@
+G5-VISUAL - INSTALACION EN WINDOWS
+
+1. Extrae todo el ZIP en una carpeta. No ejecutes archivos dentro del ZIP.
+2. Instala Python 3.11 si no lo tienes.
+3. Ejecuta instalar.bat y espera a que termine. El instalador crea .venv, instala las dependencias y genera .env automaticamente desde .env.example para conectar con Supabase.
+4. Cuando aparezca "Instalacion terminada", ejecuta iniciar.bat.
+5. Se abrira http://localhost:8765/. Deja abierta la ventana de Python mientras uses el sistema.
+6. Inicia sesion con tu cuenta. El administrador puede crear cuentas de trabajadores desde Usuarios.
+7. Desde una cuenta de trabajador, inicia el monitoreo y permite el acceso a la webcam integrada del computador.
+
+IMPORTANTE
+- No copies el entorno .venv de otro computador. instalar.bat crea uno propio.
+- No borres ni compartas el archivo .env despues de instalar; contiene la configuracion publica del proyecto.
+- Cada computador genera su propio identificador de dispositivo local.
+- Las cuentas, sesiones e historial central se consultan en Supabase PostgreSQL. SQLite conserva una copia local de las sesiones y permite mantener la persistencia local.
+- La captura de webcam y la inferencia YOLO se ejecutan en el mismo computador. No se requieren camaras USB externas.
+- Una cuenta solo puede tener una sesion activa. Un segundo acceso desde otro equipo debe ser rechazado.
+- No se guardan fotografias ni videos; solo metadatos y eventos.
+
+Si instalar.bat muestra un error, conserva abierta la ventana y comparte una captura del error completo.

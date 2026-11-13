@@ -1,0 +1,30 @@
+# Entornos virtuales (cualquier nombre: .venv, .venv-1, venv...)
+.venv*/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Datos locales: la base de datos se crea sola al usar la app
+data/*.sqlite3
+data/*.sqlite3-shm
+data/*.sqlite3-wal
+data/*.db
+data/device_id
+
+# Modelos de IA: se descargan solos la primera vez
+*.pt
+models/
+runs/
+
+# Credenciales y archivos del editor / sistema
+.env
+.env.*
+.vscode/
+.idea/
+*.log
+Thumbs.db
+.DS_Store
